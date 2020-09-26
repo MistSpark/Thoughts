@@ -1,46 +1,46 @@
 #Google Dorking:
 
 #-----Search for Subdomains-----#
-site:*.TARGET
+site:*.EXAMPLE.COM
 
 #-----Publicly exposed documents-----#
-site:TARGET ext:doc | ext:docx | ext:odt | ext:rtf | ext:sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext:csv
+site:EXAMPLE.COM ext:doc | ext:docx | ext:odt | ext:rtf | ext:sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext:csv
 
 #-----Directory Listing-----#
-site:TARGET intitle:index.of
+site:EXAMPLE.COM intitle:index.of
 
 #-----Configuration Files-----#
-site:TARGET ext:xml | ext:conf | ext:cnf | ext:reg | ext:inf | ext:rdp | ext:cfg | ext:txt | ext:ora | ext:ini | ext:env
+site:EXAMPLE.COM ext:xml | ext:conf | ext:cnf | ext:reg | ext:inf | ext:rdp | ext:cfg | ext:txt | ext:ora | ext:ini | ext:env
 
 #-----Database files exposed-----#
-site:TARGET ext:sql | ext:dbf | ext:mdb
+site:EXAMPLE.COM ext:sql | ext:dbf | ext:mdb
 
 #-----Log files exposed-----#
-site:TARGET ext:log
+site:EXAMPLE.COM ext:log
 
 #-----Backup and old files-----#
-site:TARGET ext:bkf | ext:bkp | ext:bak | ext:old | ext:backup
+site:EXAMPLE.COM ext:bkf | ext:bkp | ext:bak | ext:old | ext:backup
 
 #-----Login pages-----# (Locating login pages is my favorite one)
-site:rTARGET inurl:login | inurl:signin | intitle:Login | intitle:"sign in" | inurl:auth
+site:rEXAMPLE.COM inurl:login | inurl:signin | intitle:Login | intitle:"sign in" | inurl:auth
 
 #-----SQL errors-----#
-site:TARGET intext:"sql syntax near" | intext:"syntax error has occurred" | intext:"incorrect syntax near" | intext:"unexpected end of SQL command" | intext:"Warning: mysql_connect()" | intext:"Warning: mysql_query()" | intext:"Warning: pg_connect()"
+site:EXAMPLE.COM intext:"sql syntax near" | intext:"syntax error has occurred" | intext:"incorrect syntax near" | intext:"unexpected end of SQL command" | intext:"Warning: mysql_connect()" | intext:"Warning: mysql_query()" | intext:"Warning: pg_connect()"
 
 #-----PHP errors / warnings-----#
-site:TARGET ext:php intitle:phpinfo "published by the PHP Group"
+site:EXAMPLE.COM ext:php intitle:phpinfo "published by the PHP Group"
 
 #-----phpinfo()-----#
-site:TARGET ext:php intitle:phpinfo "published by the PHP Group"
+site:EXAMPLE.COM ext:php intitle:phpinfo "published by the PHP Group"
 
 #-----Search Pastebin.com / pasting sites-----#
-site:pastebin.com | site:paste2.org | site:pastehtml.com | site:slexy.org | site:snipplr.com | site:snipt.net | site:textsnip.com | site:bitpaste.app | site:justpaste.it | site:heypasteit.com | site:hastebin.com | site:dpaste.org | site:dpaste.com | site:codepad.org | site:jsitor.com | site:codepen.io | site:jsfiddle.net | site:dotnetfiddle.net | site:phpfiddle.org | site:ide.geeksforgeeks.org | site:repl.it | site:ideone.com | site:paste.debian.net | site:paste.org | site:paste.org.ru | site:codebeautify.org  | site:codeshare.io | site:trello.com "TARGET"
+site:pastebin.com | site:paste2.org | site:pastehtml.com | site:slexy.org | site:snipplr.com | site:snipt.net | site:textsnip.com | site:bitpaste.app | site:justpaste.it | site:heypasteit.com | site:hastebin.com | site:dpaste.org | site:dpaste.com | site:codepad.org | site:jsitor.com | site:codepen.io | site:jsfiddle.net | site:dotnetfiddle.net | site:phpfiddle.org | site:ide.geeksforgeeks.org | site:repl.it | site:ideone.com | site:paste.debian.net | site:paste.org | site:paste.org.ru | site:codebeautify.org  | site:codeshare.io | site:trello.com "EXAMPLE.COM"
 
 #-----Search Github.com and Gitlab.com-----#
-site:github.com | site:gitlab.com "TARGET"
+site:github.com | site:gitlab.com "EXAMPLE.COM"
 
 #-----Search Stackoverflow.com-----#
-site:stackoverflow.com "TARGET"
+site:stackoverflow.com "EXAMPLE.COM"
 
 #-----Signup pages-----#
-site:TARGET inurl:signup | inurl:register | intitle:Signup
+site:EXAMPLE.COM inurl:signup | inurl:register | intitle:Signup
