@@ -1,5 +1,8 @@
 #Google Dorking:
 
+#-----Search for Subdomains-----#
+site:*.TARGET
+
 #-----Publicly exposed documents-----#
 site:TARGET ext:doc | ext:docx | ext:odt | ext:rtf | ext:sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext:csv
 
