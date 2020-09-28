@@ -3,6 +3,9 @@
 #-----Search for Subdomains-----#
 site:*.EXAMPLE.COM
 
+#-----Search for Nested Subdomains-----#
+site:*.*.*.EXAMPLE.COM
+
 #-----Publicly exposed documents-----#
 site:EXAMPLE.COM ext:doc | ext:docx | ext:odt | ext:rtf | ext:sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext:csv
 
