@@ -25,7 +25,7 @@ site:EXAMPLE.COM ext:log
 site:EXAMPLE.COM ext:bkf | ext:bkp | ext:bak | ext:old | ext:backup
 
 #-----Login pages-----# (Locating login pages is my favorite one)
-site:rEXAMPLE.COM inurl:login | inurl:signin | intitle:Login | intitle:"sign in" | inurl:auth
+site:EXAMPLE.COM inurl:login | inurl:signin | intitle:Login | intitle:"sign in" | inurl:auth
 
 #-----SQL errors-----#
 site:EXAMPLE.COM intext:"sql syntax near" | intext:"syntax error has occurred" | intext:"incorrect syntax near" | intext:"unexpected end of SQL command" | intext:"Warning: mysql_connect()" | intext:"Warning: mysql_query()" | intext:"Warning: pg_connect()"
